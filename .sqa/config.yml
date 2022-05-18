@@ -1,0 +1,42 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: 1.6.0-alpha5
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/EOSC-synergy/sqaaas-web:
+      branch: master
+      repo: https://github.com/EOSC-synergy/sqaaas-web
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/EOSC-synergy/sqaaas-web git:
+        commands:
+        - /usr/bin/env sh .sqa/script.freaky-rose-cat.sh
+        container: qc.acc_randy-aquamarine-rabbit
+  QC.Doc:
+    repos:
+      github.com/EOSC-synergy/sqaaas-web find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.gimpy-carmine-bee.sh
+        container: qc.doc_baggy-champagne-stingray
+      github.com/EOSC-synergy/sqaaas-web markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.craggy-scarlet-drever.sh
+        container: qc.doc_slaphappy-linen-discus
+  QC.Lic:
+    repos:
+      github.com/EOSC-synergy/sqaaas-web licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.grumpy-cardinal-fish.sh
+        container: qc.lic_snazzy-pear-chimpanzee
+  QC.Ver:
+    repos:
+      github.com/EOSC-synergy/sqaaas-web is_semver.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.pasty-dandelion-lizard.sh
+        container: qc.ver_boozy-dandelion-labradoodle
+timeout: 600
