@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: 1.6.0-alpha5
+      branch: 1.7.0-only_im_client
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/EOSC-synergy/sqaaas-web:
       branch: master
@@ -15,28 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-rose-cat.sh
-        container: qc.acc_randy-aquamarine-rabbit
+        - /usr/bin/env sh .sqa/script.stuffy-eggplant-okapi.sh
+        container: qc.acc_homey-thistle-bullfrog
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-carmine-bee.sh
-        container: qc.doc_baggy-champagne-stingray
+        - /usr/bin/env sh .sqa/script.messy-teal-termite.sh
+        container: qc.doc_cheeky-buff-mongoose
+      github.com/EOSC-synergy/sqaaas-web git:
+        commands:
+        - /usr/bin/env sh .sqa/script.tasty-razzmatazz-wombat.sh
+        container: qc.doc_cheeky-grey-catfish
       github.com/EOSC-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-scarlet-drever.sh
-        container: qc.doc_slaphappy-linen-discus
+        - /usr/bin/env sh .sqa/script.randy-maroon-crocodile.sh
+        container: qc.doc_tacky-ivory-mule
+  QC.FAIR:
+    repos:
+      github.com/EOSC-synergy/sqaaas-web F-UJI:
+        commands:
+        - /usr/bin/env sh .sqa/script.goopy-aquamarine-zebu.sh
+        container: qc.fair_squeaky-tan-anteater
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-cardinal-fish.sh
-        container: qc.lic_snazzy-pear-chimpanzee
+        - /usr/bin/env sh .sqa/script.grumpy-alizarin-dunker.sh
+        container: qc.lic_stinky-blue-goose
   QC.Ver:
     repos:
-      github.com/EOSC-synergy/sqaaas-web is_semver.py:
+      github.com/EOSC-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-dandelion-lizard.sh
-        container: qc.ver_boozy-dandelion-labradoodle
-timeout: 600
+        - /usr/bin/env sh .sqa/script.dorky-tan-fossa.sh
+        container: qc.ver_pokey-lilac-burmese
+timeout: 1800

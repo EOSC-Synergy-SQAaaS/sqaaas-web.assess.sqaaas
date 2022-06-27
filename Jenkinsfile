@@ -6,13 +6,13 @@ pipeline {
     agent any
 
     stages {
-        stage('SQA baseline criterion: QC.Acc & QC.Doc & QC.Lic & QC.Ver') {
+        stage('SQA baseline criterion: QC.Acc & QC.Doc & QC.FAIR & QC.Lic & QC.Ver') {
             steps {
                 script {
                     projectConfig = pipelineConfig(
                         configFile: '.sqa/config.yml',
                         scmConfigs: [ localBranch: true ],
-                        validatorDockerImage: 'eoscsynergy/jpl-validator:2.3.0'
+                        validatorDockerImage: 'eoscsynergy/jpl-validator:2.4.0'
                     )
                     buildStages(projectConfig)
                 }

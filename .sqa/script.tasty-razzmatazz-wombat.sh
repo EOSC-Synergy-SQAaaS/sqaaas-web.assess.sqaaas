@@ -1,4 +1,4 @@
 (
 cd github.com/EOSC-synergy/sqaaas-web &&
-    is_semver.py
+    git rev-parse --is-inside-work-tree
 )
