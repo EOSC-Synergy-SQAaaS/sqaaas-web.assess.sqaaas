@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.0
+      branch: 1.7.0_no_kubectl
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/eosc-synergy/sqaaas-web:
       branch: master
@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-black-bee.sh
-        container: qc.acc_zippy-magenta-emu
+        - /usr/bin/env sh .sqa/script.snazzy-cinnabar-tuatara.sh
+        container: qc.acc_dorky-aquamarine-mongrel
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-rose-uakari.sh
-        container: qc.doc_snoopy-black-barb
+        - /usr/bin/env sh .sqa/script.stinky-aqua-lobster.sh
+        container: qc.doc_tacky-smalt-giraffe
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-silver-iguana.sh
-        container: qc.doc_nippy-purple-slug
+        - /usr/bin/env sh .sqa/script.chummy-black-millipede.sh
+        container: qc.doc_silly-ochre-dog
       github.com/eosc-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-saffron-cuttlefish.sh
-        container: qc.doc_ready-heliotrope-cheetah
+        - /usr/bin/env sh .sqa/script.pretty-dandelion-gar.sh
+        container: qc.doc_jumpy-cerise-badger
   QC.FAIR:
     repos:
       github.com/eosc-synergy/sqaaas-web F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-charcoal-millipede.sh
-        container: qc.fair_lumpy-pink-armadillo
+        - /usr/bin/env sh .sqa/script.lumpy-cerulean-bongo.sh
+        container: qc.fair_grumpy-buff-octopus
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-persimmon-bobcat.sh
-        container: qc.lic_queasy-persimmon-caiman
+        - /usr/bin/env sh .sqa/script.messy-rose-sponge.sh
+        container: qc.lic_beady-mustard-cockroach
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-copper-tetra.sh
-        container: qc.ver_crabby-plum-bee
+        - /usr/bin/env sh .sqa/script.snoopy-violet-spider.sh
+        container: qc.ver_grumpy-amethyst-squirt
 timeout: 1800
