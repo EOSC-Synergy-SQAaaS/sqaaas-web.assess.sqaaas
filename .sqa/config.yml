@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-cerise-rat.sh
-        container: qc.acc_lovely-platinum-rabbit
+        - /usr/bin/env sh .sqa/script.zippy-mauve-buffalo.sh
+        container: qc.acc_wiggy-auburn-kangaroo
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-myrtle-seal.sh
-        container: qc.doc_breezy-pumpkin-civet
+        - /usr/bin/env sh .sqa/script.skanky-khaki-blue.sh
+        container: qc.doc_flimsy-olive-boar
       github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-cinnamon-insect.sh
-        container: qc.doc_bumpy-viridian-quoll
+        - /usr/bin/env sh .sqa/script.breezy-asparagus-dunker.sh
+        container: qc.doc_sloppy-tomato-dane
       github.com/EOSC-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-cerulean-turkey.sh
-        container: qc.doc_wimpy-aqua-ocelot
+        - /usr/bin/env sh .sqa/script.scummy-beige-lemming.sh
+        container: qc.doc_hazy-goldenrod-mammoth
   QC.FAIR:
     repos:
       github.com/EOSC-synergy/sqaaas-web F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-magenta-tapir.sh
-        container: qc.fair_boozy-lime-dhole
+        - /usr/bin/env sh .sqa/script.pokey-taupe-barracuda.sh
+        container: qc.fair_silly-gold-hummingbird
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-teal-mandrill.sh
-        container: qc.lic_cozy-gold-angora
+        - /usr/bin/env sh .sqa/script.cranky-cobalt-zebu.sh
+        container: qc.lic_flaky-beige-chihuahua
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-teal-impala.sh
-        container: qc.ver_greasy-ruby-frise
+        - /usr/bin/env sh .sqa/script.sickly-sepia-mayfly.sh
+        container: qc.ver_goopy-cornflower-argentino
 timeout: 1800
