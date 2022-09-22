@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-cerulean-squid.sh
-        container: qc.acc_cozy-violet-jackal
+        - /usr/bin/env sh .sqa/script.jumpy-ultramarine-guppy.sh
+        container: qc.acc_hilly-ultramarine-lionfish
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-thistle-greyhound.sh
-        container: qc.doc_paltry-ultramarine-barracuda
+        - /usr/bin/env sh .sqa/script.gamy-green-spoonbill.sh
+        container: qc.doc_sloppy-denim-labradoodle
       github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-corn-whippet.sh
-        container: qc.doc_slaphappy-sepia-avocet
+        - /usr/bin/env sh .sqa/script.smelly-peach-seahorse.sh
+        container: qc.doc_clammy-pear-husky
       github.com/EOSC-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-seashell-worm.sh
-        container: qc.doc_scanty-indigo-akbash
+        - /usr/bin/env sh .sqa/script.frumpy-cerulean-akita.sh
+        container: qc.doc_flimsy-amethyst-gibbon
   QC.FAIR:
     repos:
       github.com/EOSC-synergy/sqaaas-web F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-cinnamon-hippopotamus.sh
-        container: qc.fair_stealthy-cinnamon-mouse
+        - /usr/bin/env sh .sqa/script.blurry-ivory-vole.sh
+        container: qc.fair_shabby-pumpkin-owl
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-sangria-manatee.sh
-        container: qc.lic_wiggy-eggplant-jellyfish
+        - /usr/bin/env sh .sqa/script.seedy-amaranth-deer.sh
+        container: qc.lic_lumpy-brass-wrasse
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-ruby-fossa.sh
-        container: qc.ver_pokey-seashell-pinscher
+        - /usr/bin/env sh .sqa/script.geeky-ultramarine-gar.sh
+        container: qc.ver_cranky-plum-setter
 timeout: 1800
