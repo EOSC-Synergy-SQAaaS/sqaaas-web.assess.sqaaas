@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-brass-angora.sh
-        container: qc.acc_leaky-rose-eagle
+        - /usr/bin/env sh .sqa/script.stinky-lemon-lynx.sh
+        container: qc.acc_clammy-cream-corgi
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-denim-camel.sh
-        container: qc.doc_silly-turquoise-tuatara
+        - /usr/bin/env sh .sqa/script.homey-corn-catfish.sh
+        container: qc.doc_gummy-bronze-zebra
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-chocolate-sponge.sh
-        container: qc.doc_slimy-goldenrod-hummingbird
+        - /usr/bin/env sh .sqa/script.scaly-silver-whale.sh
+        container: qc.doc_bluesy-russet-uguisu
       github.com/eosc-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-harlequin-baboon.sh
-        container: qc.doc_stinky-fuchsia-chinchilla
+        - /usr/bin/env sh .sqa/script.dorky-carmine-buffalo.sh
+        container: qc.doc_fuzzy-bistre-crane
   QC.FAIR:
     repos:
       github.com/eosc-synergy/sqaaas-web F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-ivory-barnacle.sh
-        container: qc.fair_pokey-olivine-jackal
+        - /usr/bin/env sh .sqa/script.tacky-sepia-stingray.sh
+        container: qc.fair_lousy-purple-robin
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-pumpkin-rottweiler.sh
-        container: qc.lic_seedy-celadon-gorilla
+        - /usr/bin/env sh .sqa/script.chewy-pumpkin-saola.sh
+        container: qc.lic_skanky-brown-goat
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-gamboge-spaniel.sh
-        container: qc.ver_lanky-crimson-indri
+        - /usr/bin/env sh .sqa/script.tacky-plum-koala.sh
+        container: qc.ver_shabby-crimson-wasp
 timeout: 1800
