@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-ochre-zebra.sh
-        container: qc.acc_gloppy-razzmatazz-heron
+        - /usr/bin/env sh .sqa/script.wimpy-taupe-mule.sh
+        container: qc.acc_shaky-plum-hummingbird
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-cinnamon-newt.sh
-        container: qc.doc_jumpy-periwinkle-harrier
+        - /usr/bin/env sh .sqa/script.ugly-violet-coati.sh
+        container: qc.doc_sleazy-rose-devil
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-yellow-argentino.sh
-        container: qc.doc_homely-maroon-worm
+        - /usr/bin/env sh .sqa/script.sloppy-yellow-quoll.sh
+        container: qc.doc_wheezy-mauve-chinook
       github.com/eosc-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-ivory-peccary.sh
-        container: qc.doc_wiggy-coral-dachsbracke
+        - /usr/bin/env sh .sqa/script.hilly-rose-wolf.sh
+        container: qc.doc_chewy-pink-gar
   QC.FAIR:
     repos:
       github.com/eosc-synergy/sqaaas-web F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-denim-manatee.sh
-        container: qc.fair_blurry-brass-chihuahua
+        - /usr/bin/env sh .sqa/script.shaggy-beige-hyena.sh
+        container: qc.fair_stinky-firebrick-angelfish
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-ecru-ladybird.sh
-        container: qc.lic_sickly-sepia-mastiff
+        - /usr/bin/env sh .sqa/script.woozy-firebrick-hornet.sh
+        container: qc.lic_randy-white-octopus
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-myrtle-tarsier.sh
-        container: qc.ver_stuffy-gamboge-liger
+        - /usr/bin/env sh .sqa/script.breezy-carmine-budgerigar.sh
+        container: qc.ver_sloppy-mustard-mau
 timeout: 1800
