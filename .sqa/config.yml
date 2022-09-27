@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-seashell-hippopotamus.sh
-        container: qc.acc_droopy-orange-jellyfish
+        - /usr/bin/env sh .sqa/script.tacky-tangerine-stingray.sh
+        container: qc.acc_stuffy-flax-crocodile
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-lilac-beetle.sh
-        container: qc.doc_wimpy-lime-mole
+        - /usr/bin/env sh .sqa/script.geeky-cinnabar-bat.sh
+        container: qc.doc_homely-turquoise-hornet
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-peach-hare.sh
-        container: qc.doc_cranky-crimson-heron
+        - /usr/bin/env sh .sqa/script.randy-crimson-chipmunk.sh
+        container: qc.doc_droopy-platinum-bandicoot
       github.com/eosc-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-lilac-indri.sh
-        container: qc.doc_muggy-denim-dhole
+        - /usr/bin/env sh .sqa/script.woolly-buff-nightingale.sh
+        container: qc.doc_lovely-amethyst-hare
   QC.FAIR:
     repos:
       github.com/eosc-synergy/sqaaas-web F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-chocolate-audemer.sh
-        container: qc.fair_beady-corn-caterpillar
+        - /usr/bin/env sh .sqa/script.zippy-pumpkin-walrus.sh
+        container: qc.fair_seedy-corn-vole
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-harlequin-turkey.sh
-        container: qc.lic_sickly-plum-dog
+        - /usr/bin/env sh .sqa/script.ready-silver-snail.sh
+        container: qc.lic_goopy-platinum-hare
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-maroon-frigatebird.sh
-        container: qc.ver_muggy-celadon-boar
+        - /usr/bin/env sh .sqa/script.gummy-vermilion-shrimp.sh
+        container: qc.ver_lousy-eggplant-lobster
 timeout: 1800
