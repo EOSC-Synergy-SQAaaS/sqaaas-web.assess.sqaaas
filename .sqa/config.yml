@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.0
+      branch: 1.7.0_no_kubectl
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/eosc-synergy/sqaaas-web:
       branch: master
@@ -15,38 +15,32 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-tangerine-stingray.sh
-        container: qc.acc_stuffy-flax-crocodile
+        - /usr/bin/env sh .sqa/script.homey-grey-moorhen.sh
+        container: qc.acc_scaly-ivory-cheetah
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-cinnabar-bat.sh
-        container: qc.doc_homely-turquoise-hornet
+        - /usr/bin/env sh .sqa/script.wiggy-peach-oriole.sh
+        container: qc.doc_tasty-rose-frog
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-crimson-chipmunk.sh
-        container: qc.doc_droopy-platinum-bandicoot
+        - /usr/bin/env sh .sqa/script.zippy-cornflower-nightingale.sh
+        container: qc.doc_shabby-tomato-koala
       github.com/eosc-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-buff-nightingale.sh
-        container: qc.doc_lovely-amethyst-hare
-  QC.FAIR:
-    repos:
-      github.com/eosc-synergy/sqaaas-web F-UJI:
-        commands:
-        - /usr/bin/env sh .sqa/script.zippy-pumpkin-walrus.sh
-        container: qc.fair_seedy-corn-vole
+        - /usr/bin/env sh .sqa/script.scummy-amethyst-rhinoceros.sh
+        container: qc.doc_tacky-cyan-quail
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-silver-snail.sh
-        container: qc.lic_goopy-platinum-hare
+        - /usr/bin/env sh .sqa/script.nerdy-beige-caterpillar.sh
+        container: qc.lic_beady-cream-sponge
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-vermilion-shrimp.sh
-        container: qc.ver_lousy-eggplant-lobster
+        - /usr/bin/env sh .sqa/script.muzzy-ivory-mouse.sh
+        container: qc.ver_gloppy-orange-ragdoll
 timeout: 1800
