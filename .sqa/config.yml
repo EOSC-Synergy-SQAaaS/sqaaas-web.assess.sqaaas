@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.0
+      branch: 1.7.0_no_kubectl
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/EOSC-synergy/sqaaas-web:
       branch: master
@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-cinnabar-javanese.sh
-        container: qc.acc_ugly-peach-capybara
+        - /usr/bin/env sh .sqa/script.muggy-chestnut-zonkey.sh
+        container: qc.acc_muggy-malachite-flamingo
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-charcoal-kangaroo.sh
-        container: qc.doc_trippy-saffron-bracke
+        - /usr/bin/env sh .sqa/script.sickly-chartreuse-forest.sh
+        container: qc.doc_stuffy-magnolia-grasshopper
       github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-olivine-cuscus.sh
-        container: qc.doc_snappy-crimson-kingfisher
+        - /usr/bin/env sh .sqa/script.muggy-linen-squirrel.sh
+        container: qc.doc_grumpy-auburn-bracke
       github.com/EOSC-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-cerulean-beagle.sh
-        container: qc.doc_silly-cinnamon-warthog
+        - /usr/bin/env sh .sqa/script.bumpy-wheat-bombay.sh
+        container: qc.doc_smelly-cobalt-caterpillar
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-aquamarine-zonkey.sh
-        container: qc.lic_beady-firebrick-camel
+        - /usr/bin/env sh .sqa/script.homely-orange-millipede.sh
+        container: qc.lic_wheezy-orange-dugong
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-emerald-seahorse.sh
-        container: qc.ver_seedy-amaranth-snail
+        - /usr/bin/env sh .sqa/script.freaky-violet-rhinoceros.sh
+        container: qc.ver_snazzy-cinnabar-akbash
 timeout: 1800
