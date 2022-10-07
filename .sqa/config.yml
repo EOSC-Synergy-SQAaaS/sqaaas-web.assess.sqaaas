@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/darce-i3m/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-xanthic-tetra.sh
-        container: qc.acc_shabby-wheat-beagle
+        - /usr/bin/env sh .sqa/script.ugly-teal-sparrow.sh
+        container: qc.acc_fuzzy-cinnabar-collie
   QC.Doc:
     repos:
       github.com/darce-i3m/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-silver-lizard.sh
-        container: qc.doc_messy-xanthic-hedgehog
+        - /usr/bin/env sh .sqa/script.messy-teal-zebra.sh
+        container: qc.doc_sleepy-azure-cheetah
       github.com/darce-i3m/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-salmon-mammoth.sh
-        container: qc.doc_frumpy-cyan-ibis
+        - /usr/bin/env sh .sqa/script.nippy-chocolate-wolfhound.sh
+        container: qc.doc_boozy-silver-harrier
       github.com/darce-i3m/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-denim-llama.sh
-        container: qc.doc_scummy-ecru-corgi
+        - /usr/bin/env sh .sqa/script.hasty-chartreuse-hyrax.sh
+        container: qc.doc_grumpy-purple-tarantula
   QC.Lic:
     repos:
       github.com/darce-i3m/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-celadon-dalmatian.sh
-        container: qc.lic_gummy-zucchini-gar
+        - /usr/bin/env sh .sqa/script.tacky-zucchini-dingo.sh
+        container: qc.lic_wheezy-carmine-seal
   QC.Sec:
     repos:
       github.com/darce-i3m/sqaaas-web gosec:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-amethyst-tapir.sh
-        container: qc.sec_lumpy-tan-starfish
+        - /usr/bin/env sh .sqa/script.hasty-turquoise-monster.sh
+        container: qc.sec_pokey-cinnamon-hound
   QC.Sty:
     repos:
       github.com/darce-i3m/sqaaas-web staticcheck:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-vermilion-affenpinscher.sh
-        container: qc.sty_frumpy-heliotrope-wallaby
+        - /usr/bin/env sh .sqa/script.homely-alizarin-squirrel.sh
+        container: qc.sty_cozy-peach-coati
   QC.Ver:
     repos:
       github.com/darce-i3m/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-peach-mist.sh
-        container: qc.ver_pokey-goldenrod-dunker
+        - /usr/bin/env sh .sqa/script.sickly-tomato-cichlid.sh
+        container: qc.ver_boozy-magenta-burmese
 timeout: 1800
