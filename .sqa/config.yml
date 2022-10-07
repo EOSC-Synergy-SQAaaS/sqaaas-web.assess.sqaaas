@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.2
+      branch: release/1.7.3
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/EOSC-synergy/sqaaas-web:
       branch: master
@@ -15,32 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-aqua-tapir.sh
-        container: qc.acc_boozy-smalt-hyrax
+        - /usr/bin/env sh .sqa/script.sickly-orchid-manatee.sh
+        container: qc.acc_dorky-lavender-impala
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-myrtle-birman.sh
-        container: qc.doc_surly-violet-collie
+        - /usr/bin/env sh .sqa/script.hilly-orange-quokka.sh
+        container: qc.doc_sleepy-linen-macaw
       github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-sangria-dollar.sh
-        container: qc.doc_muggy-firebrick-dolphin
+        - /usr/bin/env sh .sqa/script.droopy-carmine-dogfish.sh
+        container: qc.doc_crappy-sangria-mandrill
       github.com/EOSC-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-azure-dachshund.sh
-        container: qc.doc_nippy-seashell-grasshopper
+        - /usr/bin/env sh .sqa/script.wiggy-vermilion-woodpecker.sh
+        container: qc.doc_tasty-ivory-peccary
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-viridian-eagle.sh
-        container: qc.lic_pokey-tomato-wallaby
+        - /usr/bin/env sh .sqa/script.scummy-white-scorpion.sh
+        container: qc.lic_wiggy-cinnabar-tortoise
+  QC.Sty:
+    repos:
+      github.com/EOSC-synergy/sqaaas-web jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.chewy-champagne-terrier.sh
+        container: qc.sty_stuffy-cinnabar-liger
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-scarlet-hippopotamus.sh
-        container: qc.ver_thirsty-apricot-tortoise
+        - /usr/bin/env sh .sqa/script.ugly-olivine-coati.sh
+        container: qc.ver_woozy-alizarin-oyster
 timeout: 1800
