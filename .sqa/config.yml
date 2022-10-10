@@ -15,42 +15,42 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-gold-serval.sh
-        container: qc.acc_gummy-celadon-spoonbill
+        - /usr/bin/env sh .sqa/script.scanty-seashell-tarantula.sh
+        container: qc.acc_foggy-peach-cheetah
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-lemon-scorpion.sh
-        container: qc.doc_messy-gold-discus
+        - /usr/bin/env sh .sqa/script.lanky-yellow-dane.sh
+        container: qc.doc_lovely-crimson-spaniel
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-russet-lion.sh
-        container: qc.doc_chewy-charcoal-dane
+        - /usr/bin/env sh .sqa/script.squirrely-rose-devil.sh
+        container: qc.doc_gloppy-pear-whale
       github.com/eosc-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-rust-dormouse.sh
-        container: qc.doc_woozy-pear-beetle
+        - /usr/bin/env sh .sqa/script.cloudy-fuchsia-leopard.sh
+        container: qc.doc_fuzzy-periwinkle-dunker
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-vermilion-capybara.sh
-        container: qc.lic_frumpy-carmine-bee
+        - /usr/bin/env sh .sqa/script.muggy-apricot-monster.sh
+        container: qc.lic_tacky-denim-dugong
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-web hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-xanthic-budgerigar.sh
-        container: qc.sty_stuffy-plum-leopard
+        - /usr/bin/env sh .sqa/script.boozy-persimmon-iguana.sh
+        container: qc.sty_smelly-cobalt-argentino
       github.com/eosc-synergy/sqaaas-web jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-tangerine-audemer.sh
-        container: qc.sty_silly-periwinkle-hornet
+        - /usr/bin/env sh .sqa/script.sleepy-coral-alligator.sh
+        container: qc.sty_nerdy-tomato-sheepdog
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-lemon-tarsier.sh
-        container: qc.ver_pasty-gold-koala
+        - /usr/bin/env sh .sqa/script.wiggy-chartreuse-husky.sh
+        container: qc.ver_muggy-magenta-okapi
 timeout: 1800
