@@ -15,42 +15,46 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-seashell-tarantula.sh
-        container: qc.acc_foggy-peach-cheetah
+        - /usr/bin/env sh .sqa/script.fuzzy-tomato-chinchilla.sh
+        container: qc.acc_queasy-saffron-dogfish
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-yellow-dane.sh
-        container: qc.doc_lovely-crimson-spaniel
+        - /usr/bin/env sh .sqa/script.beady-russet-stoat.sh
+        container: qc.doc_sloppy-white-squirrel
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-rose-devil.sh
-        container: qc.doc_gloppy-pear-whale
+        - /usr/bin/env sh .sqa/script.silly-coral-cichlid.sh
+        container: qc.doc_crappy-bronze-fousek
       github.com/eosc-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-fuchsia-leopard.sh
-        container: qc.doc_fuzzy-periwinkle-dunker
+        - /usr/bin/env sh .sqa/script.leaky-chocolate-barracuda.sh
+        container: qc.doc_chewy-beige-olm
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-apricot-monster.sh
-        container: qc.lic_tacky-denim-dugong
+        - /usr/bin/env sh .sqa/script.snippy-teal-tang.sh
+        container: qc.lic_flaky-white-mule
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-web hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-persimmon-iguana.sh
-        container: qc.sty_smelly-cobalt-argentino
+        - /usr/bin/env sh .sqa/script.snazzy-xanthic-bulldog.sh
+        container: qc.sty_bumpy-champagne-angora
       github.com/eosc-synergy/sqaaas-web jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-coral-alligator.sh
-        container: qc.sty_nerdy-tomato-sheepdog
+        - /usr/bin/env sh .sqa/script.pretty-seashell-dogfish.sh
+        container: qc.sty_stealthy-puce-grouse
+      github.com/eosc-synergy/sqaaas-web stylelint:
+        commands:
+        - /usr/bin/env sh .sqa/script.queasy-sepia-alligator.sh
+        container: qc.sty_hilly-thistle-walrus
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-chartreuse-husky.sh
-        container: qc.ver_muggy-magenta-okapi
+        - /usr/bin/env sh .sqa/script.flimsy-champagne-labradoodle.sh
+        container: qc.ver_bluesy-lavender-dollar
 timeout: 1800
