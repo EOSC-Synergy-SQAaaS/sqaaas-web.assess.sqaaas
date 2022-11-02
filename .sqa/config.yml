@@ -15,46 +15,46 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-puce-fish.sh
-        container: qc.acc_grumpy-alizarin-moth
+        - /usr/bin/env sh .sqa/script.grumpy-harlequin-dodo.sh
+        container: qc.acc_scummy-mauve-fish
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-rose-goose.sh
-        container: qc.doc_cloudy-rose-cheetah
+        - /usr/bin/env sh .sqa/script.woozy-myrtle-dugong.sh
+        container: qc.doc_snazzy-ivory-coyote
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-ruby-seal.sh
-        container: qc.doc_sleazy-champagne-bloodhound
+        - /usr/bin/env sh .sqa/script.hilly-ruby-zonkey.sh
+        container: qc.doc_wiggy-linen-raccoon
       github.com/eosc-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-rust-saola.sh
-        container: qc.doc_hasty-copper-seal
+        - /usr/bin/env sh .sqa/script.stealthy-cardinal-bonobo.sh
+        container: qc.doc_skinny-cardinal-wasp
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-gold-fousek.sh
-        container: qc.lic_frumpy-goldenrod-llama
+        - /usr/bin/env sh .sqa/script.sleazy-pear-rottweiler.sh
+        container: qc.lic_trippy-olivine-ibis
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-web hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-pumpkin-tiger.sh
-        container: qc.sty_tasty-periwinkle-ocelot
+        - /usr/bin/env sh .sqa/script.tacky-coral-liger.sh
+        container: qc.sty_stuffy-viridian-eel
       github.com/eosc-synergy/sqaaas-web jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-pear-cuttlefish.sh
-        container: qc.sty_baggy-yellow-whale
+        - /usr/bin/env sh .sqa/script.sloppy-gamboge-caracal.sh
+        container: qc.sty_sickly-peach-saola
       github.com/eosc-synergy/sqaaas-web stylelint:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-brass-stoat.sh
-        container: qc.sty_grumpy-emerald-vulture
+        - /usr/bin/env sh .sqa/script.sleepy-cream-wolfhound.sh
+        container: qc.sty_clammy-malachite-peccary
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-brown-bison.sh
-        container: qc.ver_snazzy-cobalt-dog
+        - /usr/bin/env sh .sqa/script.stuffy-cerise-oyster.sh
+        container: qc.ver_muggy-orchid-peccary
 timeout: 5400
