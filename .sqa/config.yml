@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.6
+      branch: release/1.7.7
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/EOSC-synergy/sqaaas-web:
       branch: master
@@ -15,46 +15,42 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-grey-nightingale.sh
-        container: qc.acc_lanky-rose-turkey
+        - /usr/bin/env sh .sqa/script.muzzy-ecru-zebra.sh
+        container: qc.acc_whiny-turquoise-kingfisher
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-red-bulldog.sh
-        container: qc.doc_foggy-yellow-hedgehog
+        - /usr/bin/env sh .sqa/script.shabby-pumpkin-wolfhound.sh
+        container: qc.doc_ugly-saffron-fish
       github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-ivory-donkey.sh
-        container: qc.doc_geeky-fuchsia-sheepdog
+        - /usr/bin/env sh .sqa/script.skimpy-lavender-termite.sh
+        container: qc.doc_scummy-lime-lobster
       github.com/EOSC-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-wisteria-salamander.sh
-        container: qc.doc_skinny-magenta-octopus
+        - /usr/bin/env sh .sqa/script.hazy-cerulean-bison.sh
+        container: qc.doc_stuffy-lemon-bobcat
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-carmine-frise.sh
-        container: qc.lic_grumpy-cyan-turkey
+        - /usr/bin/env sh .sqa/script.squeaky-tangerine-dragonfly.sh
+        container: qc.lic_squirrely-alizarin-turtle
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-web hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-buff-dhole.sh
-        container: qc.sty_tasty-amethyst-fousek
+        - /usr/bin/env sh .sqa/script.zippy-beige-wolverine.sh
+        container: qc.sty_sunny-amethyst-cheetah
       github.com/EOSC-synergy/sqaaas-web jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-smalt-bombay.sh
-        container: qc.sty_gamy-black-macaw
-      github.com/EOSC-synergy/sqaaas-web stylelint:
-        commands:
-        - /usr/bin/env sh .sqa/script.boozy-ivory-koala.sh
-        container: qc.sty_chummy-carmine-mammoth
+        - /usr/bin/env sh .sqa/script.woolly-khaki-wallaby.sh
+        container: qc.sty_shaggy-peach-schnauzer
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-black-armadillo.sh
-        container: qc.ver_chewy-red-bobcat
+        - /usr/bin/env sh .sqa/script.tacky-blue-otter.sh
+        container: qc.ver_shaggy-linen-owl
 timeout: 5400
